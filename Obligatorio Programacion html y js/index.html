@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obligatorio</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+
+<body>
+
+    <!--Inicio Sesion Persona-->
+    <div id="pantallaLoginPersona" class="este">
+        <center>
+            <h1>Persona</h1>
+            <label>Usuario</label>
+            <input type="text" id="txtUsuarioPersonaIngresar" placeholder="Nombre Usuario" class="cajaTextoLogin">
+            <br>
+            <br>
+            <label>Contraseña</label>
+            <input type="password" id="txtPassPersonaIngresar" placeholder="Contraseña">
+            <br>
+            <br>
+            <p id="etqMensajeErrorInicioPersona"></p>
+            <button id="btnIngresarPersona">Ingresar</button>
+            <button id="btnRegistroPersona">Registrarme</button>
+            <br>
+            <br>
+            <button id="btnLoginComoLocal">Ingresar como Local</button>
+
+
+        </center>
+    </div>
+
+    <!--Inicio Sesion Local-->
+    <div id="pantallaLoginLocal">
+        <center>
+            <h1>Local</h1>
+            <label>Usuario</label>
+            <input type="text" id="txtUsuarioLocalIngresar" placeholder="Nombre Usuario">
+            <br>
+            <br>
+            <label>Contraseña</label>
+            <input type="password" id="txtPassLocalIngresar" placeholder="Contraseña">
+            <br>
+            <p id="etqMensageErrorInicioLocal"></p>
+            <button id="btnIngresarLocal">Ingresar</button>
+            <br>
+            <br>
+            <button id="btnVolverLoginPersona">Ingresar como Persona</button>
+        </center>
+    </div>
+
+    <!--Resgitro Usuario Persona-->
+    <div id="pantallaRegistroPersona">
+        <center>
+            <h1>Registro</h1>
+            <label>Nombre Completo</label>
+            <input type="text" id="txtNombreRegistroPersona" placeholder="nombre completo">
+            <br>
+            <br>
+            <label>Nombre Usuario</label>
+            <input type="text" id="txtUsuarioRegistroPersona" placeholder="usuario">
+            <br>
+            <br>
+            <label>Contraseña</label>
+            <input type="text" id="txtPassRegistroPersona" placeholder="ingrese una contraseña">
+            <p id="etqMensajeErrorRegistroPersona"></p>
+            <p>Condiciones de contraseña:</p>
+            <ul>
+                <li>1. Tener al menos 6 Caracteres</li>
+                <li>2. Tener al menos una mayuscula<br>
+                    y una minuscula</li>
+                <li>3. Contener al menos un numero</li>
+            </ul>
+            <button id="btnCargarRegistroPersona">REGISTRARME</button>
+            <button id="btnVolverRegistroALogPersona">volver al login</button>
+        </center>
+    </div>
+
+    <!--Pantalla Principal Usuario-->
+
+    <div id="pantallaPrincipalPersona">
+        <center>
+            <h1>Pantalla Prinicpal de Persona</h1>
+            <button id="btnVolverPrinPersonaALogin">volver login</button>
+        </center>
+
+        <!--Botones opciones Principal Usuario-->
+        <div id="botonesOpcionesPrincipalPersona">
+            <button id="btnPantallaReservasPersona">Reservas</button>
+            <button id="btnPantallaPendientesPersona">Pendientes</button>
+            <button id="btnPantallaEstadisticasPersona">Estadisticas</button>
+            <button id="btnPantallaCalificacionesPersona">Calificaciones</button>
+        </div>
+
+        <!--Pantalla RESERVAS Principal Usuario-->
+        <div id="pantallaReservasPrincipalPersona">
+            <fieldset>
+                <h1>Reservaciones</h1>
+
+                <div class="contenedor">
+                    <div class="caja">
+                        <h3>Teatro Solis</h3>
+                    </div>
+                    <div class="caja">
+                        <img src="imgs/foto1.jpg" height="80">
+                    </div>
+                    <div class="caja">
+                        <p>Hacer Reservaciones</p>
+                    </div>
+                    <div class="caja">
+                        <input type="number" id="txtCantReservasSolis" placeholder="Cant. Reservas">
+                        <button id="btnReservarTestroSolis">Reservar</button><br>
+                        <a id="etqMensajeErrorReservaSolis"></a>
+                    </div>
+                </div>
+
+                <div class="contenedor">
+                    <div class="caja">
+                        <h3>Museo del Carnaval</h3>
+                    </div>
+                    <div class="caja">
+                        <img src="imgs/foto2.jpg" height="80">
+                    </div>
+                    <div class="caja">
+                        <p>Hacer Reservaciones</p>
+                    </div>
+                    <div class="caja">
+                        <input type="number" id="txtCantReservasMuseoDelCarnaval" placeholder="Cant. Reservas">
+                        <button id="btnReservarMuseoDelCarnaval">Reservar</button><br>
+                        <a id="etqMensajeErrorReservaMuseoDelCarnaval"></a>
+                    </div>
+                </div>
+
+                <div class="contenedor">
+                    <div class="caja">
+                        <h3>Teatro Opera</h3>
+                    </div>
+                    <div class="caja">
+                        <img src="imgs/foto3.jpg" height="80">
+                    </div>
+                    <div class="caja">
+                        <p>Hacer Reservaciones</p>
+                    </div>
+                    <div class="caja">
+                        <input type="number" id="txtCantReservasTeatroOpera" placeholder="Cant. Reservas">
+                        <button id="btnReservarTeatroOpera">Reservar</button><br>
+                        <a id="etqMensajeErrorReservaTeatroOpera"></a>
+                    </div>
+                </div>
+
+                <div class="contenedor">
+                    <div class="caja">
+                        <h3>Restaurant Tu Refuerso</h3>
+                    </div>
+                    <div class="caja">
+                        <img src="imgs/foto4.jpg" height="80">
+                    </div>
+                    <div class="caja">
+                        <p>Hacer Reservaciones</p>
+                    </div>
+                    <div class="caja">
+                        <input type="number" id="txtCantReservasTuRefuerso" placeholder="Cant. Reservas">
+                        <button id="btnReservarTuRefuerso">Reservar</button><br>
+                        <a id="etqMensajeErrorReservaTuRefuerso"></a>
+                    </div>
+                </div>
+
+                <div class="contenedor">
+                    <div class="caja">
+                        <h3>Restaurant El Galpon</h3>
+                    </div>
+                    <div class="caja">
+                        <img src="imgs/foto5.jpg" height="80">
+                    </div>
+                    <div class="caja">
+                        <p>Hacer Reservaciones</p>
+                    </div>
+                    <div class="caja">
+                        <input type="number" id="txtCantReservasElGalpon" placeholder="Cant. Reservas">
+                        <button id="btnReservaElGalpon">Reservar</button><br>
+                        <a id="etqMensajeErrorReservaElGalpon"></a>
+                    </div>
+                </div>
+
+                <div class="contenedor">
+                    <div class="caja">
+                        <h3>Museo La Luz</h3>
+                    </div>
+                    <div class="caja">
+                        <img src="imgs/foto7.jpg" height="80">
+                    </div>
+                    <div class="caja">
+                        <p>Hacer Reservaciones</p>
+                    </div>
+                    <div class="caja">
+                        <input type="number" id="txtCantReservasLaLuz" placeholder="Cant. Reservas">
+                        <button id="btnReservarMuseoLaLuz">Reservar</button><br>
+                        <a id="etqMensajeErrorReservaLaLuz"></a>
+                    </div>
+                </div>
+
+                <div class="contenedor">
+                    <div class="caja">
+                        <h3>Cafeteria Cafe</h3>
+                    </div>
+                    <div class="caja">
+                        <img src="imgs/foto6.jpg" height="80">
+                    </div>
+                    <div class="caja">
+                        <p>Hacer Reservaciones</p>
+                    </div>
+                    <div class="caja">
+                        <input type="number" id="txtCantReservasCafeteriaCafe" placeholder="Cant. Reservas">
+                        <button id="btnReservaCafeteriaCafe">Reservar</button><br>
+                        <a id="etqMensajeErrorReservaCafeteriaCafe"></a>
+                    </div>
+                </div>
+
+            </fieldset>
+        </div>
+
+        <!--Pantalla PENDIENTES Principal Usuario-->
+        <div id="pantallaPendientesPrincipalPersona">
+            <fieldset>
+                <h1>Reservas Pendientes</h1>
+
+                <p id="tablaRservasPendientesUsuario"></p>
+
+            </fieldset>
+        </div>
+
+        <!--Pantalla ESTADISTICAS Principal Usuario-->
+        <div id="pantallaEstadisticasPrincipalPersona">
+            <fieldset>
+                <h1>Pantalla ESTADISTICAS Usuario Persona</h1>
+                <p id="tablaEstadisticasUsuario"></p>
+                <p id="etqLocalFavorito"></p>
+
+            </fieldset>
+        </div>
+
+        <!--Pantalla CALIFICACIONES Principal Usuario-->
+        <div id="pantallaCalificacionesPrincipalPersona">
+            <fieldset>
+                <h1>Pantalla Reservas Usuario Persona</h1>
+                <p id="tablaCalificarReservasUsuario"></p>
+            </fieldset>
+        </div>
+
+    </div>
+
+    <!--Pantalla Principal Local-->
+
+    <div id="pantallaPrincipalLocal">
+        <center>
+            <h1>Pantalla Principal Local</h1>
+            <button id="btnVolverPrinLocalALogin">Volver login</button>
+        </center>
+
+        <!--Botones opciones Principal Local-->
+        <div id="botonesOpcionesPrincipalLocal">
+            <button id="btnPantallaInfoLocal">Informacion Local</button>
+            <button id="btnPantallaEstadisticasLocal">Estadisticas</button>
+            <button id="btnPantallaGestionReservasLocal">Gestion Reservas</button>
+        </div>
+
+        <!--Pantalla INFORMACION LOCAL Principal local-->
+        <div id="pantallaPrincipalInfoLocal">
+            <fieldset>
+                <h1>Pantalla INFO LOCAL Usuario Local</h1>
+
+                <div class="contenedor2">
+                    <div class="caja">
+                        <h3 id="etqNombreLocalInfoLocal"></h3>
+                    </div>
+                    <div class="caja">
+                        <p>Estado del local:</p>
+                        <select id="txtOpcionesModificacionEstadoLocal">
+                            <option>Habilitado</option>
+                            <option>Deshabilitado</option>
+                        </select>
+                        <button id="btnCambiarEstadoLocal">Cambiar</button>
+                        <p id="etqMEnsajeErrorCambioEstado">Mensaje Cambio Estado</p>
+                    </div>
+                    <div class="caja">
+                        <p>Estado Actual:<a id="etqEstadoActualLocal"></a></p>
+                    </div>
+                    <div class="caja">
+                        <p>Ingrese Nuevo Cupo Maximo</p>
+                        <input type="number" id="txtModificarCupoMacimoLocal" placeholder="Nuevo Cupo Maximo">
+                        <button id="btnModificarCupoMaximoLocal">Cambiar</button><br>
+                        <a id="etqMEnsajeErrorCambioCupoMaxLocal"></a>
+                        <p>Cupo Max Actual:<a id="etqCupoMaximoActualLocal"></a></p>
+                    </div>
+                </div>
+
+            </fieldset>
+        </div>
+
+        <!--Pantalla ESTADISTICAS Principal Local-->
+        <div id="pantallaPrincipalEstadisticasLocal">
+            <fieldset>
+                
+                <center>
+                    <h1 id="etqNombreLocalEstadisticasMostradas"></h1>
+                    <p id="etqFotoLocalEstadisticas"></p>
+                    <p>Estadisticas</p>
+                    <table>
+                        <tr>
+                            <td>% de ocupacion</td>
+                            <td>Promedio Calificaciones</td>
+                            <td>Total Reservas</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>%<a id="etqPorcentajeOcupacionLocal"></a></p>
+                            </td>
+                            <td>
+                                <p><a id="etqPromedioCalificacionesLocal"></a></p>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Cupo Maximo:<a id="etqCupoMaximoLocal"></a></p>
+                            </td>
+                            <td></td>
+                            <td>
+                                <p>Pendientes: <a id="etqReservasPendientesLocal"></a></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Actuales: <a id="etqReservasActuales"></a></p>
+                            </td>
+                            <td></td>
+                            <td>
+                                <p>Finalizadas <a id="etqReservasFinalizadasLocal"></a></p>
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+            </fieldset>
+        </div>
+
+        <!--Pantalla GESTION RESERVAS Principal Local-->
+        <div id="pantallaPrincipalGestionReservasLocal">
+            <fieldset>
+                <h1>Pantalla GESTION RESERVAS Usuario Local</h1>
+                <br>
+                <div class="buscadorReservas">
+                    <input type="text" id="txtTextoBuscadoReservaLocal" placeholder="Buscar Pendientes">
+                    <button id="btnBuscarReservasPendientesLocal">Buscar</button>
+                </div>
+                <br>
+                <div>
+                    <button id="btnMostrarReservasPendientesLocal">Mostrar Todas</button>
+                    <br>
+                    <p id="tblTablaReservasPendientesLocal"></p>
+                </div>
+            </fieldset>
+        </div>
+
+    </div>
+
+
+
+    
+    <script src="js/index.js"></script>
+</body>
+
+</html>
